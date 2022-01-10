@@ -1,0 +1,50 @@
+@import "_variables";
+
+@mixin wrapperDefaults {
+    width: 100%;
+    max-width: $wrMaxWidth;
+    padding: $wrPadding;
+}
+
+@mixin hoverText {
+    &:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+
+@mixin flexContainerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bannerDefaults {
+    display: grid;
+    box-shadow: $boxShadow;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border: $border1px;
+    @media (max-width: 1500px) {
+        grid-template-rows: 1fr 0.5fr;
+    }
+}
+
+@mixin h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@mixin h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+@mixin h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@mixin h4 {
+    font-size: 1.2rem;
+}
